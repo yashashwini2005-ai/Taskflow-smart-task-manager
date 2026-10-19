@@ -115,7 +115,7 @@ Install the following tools:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/taskflow-smart-task-manager.git
+git clone https://github.com/yashashwini2005-ai/taskflow-smart-task-manager.git
 cd taskflow-smart-task-manager
 ```
 
