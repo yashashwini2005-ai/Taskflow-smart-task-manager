@@ -1,0 +1,425 @@
+
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  background: #f7f8fc;
+  color: #20243a;
+}
+
+.sidebar {
+  width: 235px;
+  background: #fff;
+  border-right: 1px solid #e9eaf1;
+  padding: 30px 18px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 23px;
+  font-weight: 800;
+  margin: 0 0 48px 8px;
+}
+
+.brand-icon {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  background: #6658e8;
+  color: white;
+  border-radius: 11px;
+}
+
+.nav-heading, .eyebrow {
+  color: #9094a8;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+.nav-heading {
+  margin: 0 0 14px 10px;
+}
+
+.nav-item {
+  border: 0;
+  background: transparent;
+  padding: 13px 12px;
+  margin-bottom: 7px;
+  text-align: left;
+  border-radius: 9px;
+  color: #747991;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.nav-item.active, .nav-item:hover {
+  color: #6254dd;
+  background: #f0eeff;
+}
+
+.sidebar-bottom {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 25px;
+  border-top: 1px solid #eeeef4;
+  font-size: 12px;
+}
+
+.profile-avatar {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #e7e3ff;
+  color: #6254dd;
+  font-weight: bold;
+}
+
+.sidebar-bottom p {
+  margin: 5px 0 0;
+  color: #9296a8;
+}
+
+.main-content {
+  max-width: 1350px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 42px;
+}
+
+.topbar {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e9eaf1;
+  color: #85899d;
+  font-size: 12px;
+}
+
+.today-label {
+  color: #6254dd;
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 42px 0 30px;
+}
+
+.eyebrow {
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-size: clamp(27px, 3vw, 36px);
+  letter-spacing: -1.3px;
+  margin: 0;
+}
+
+.subtitle {
+  color: #85899d;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.primary-button, .secondary-button {
+  padding: 12px 18px;
+  border-radius: 9px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.primary-button {
+  background: #6658e8;
+  color: white;
+  border: 1px solid #6658e8;
+}
+
+.primary-button:hover {
+  background: #5143cf;
+}
+
+.secondary-button {
+  background: white;
+  border: 1px solid #e1e2eb;
+  color: #555a70;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.stat-card {
+  background: white;
+  border: 1px solid #ebecf3;
+  border-radius: 13px;
+  padding: 21px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stat-card span, .stat-card small {
+  font-size: 12px;
+  color: #85899d;
+}
+
+.stat-card strong {
+  font-size: 29px;
+}
+
+.task-section {
+  margin-top: 38px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.section-header h2, .task-form h2 {
+  font-size: 19px;
+  margin: 0 0 7px;
+}
+
+.section-header p {
+  margin: 0;
+  color: #85899d;
+  font-size: 12px;
+}
+
+.filter-select, input, select {
+  font: inherit;
+}
+
+.filter-select {
+  background: white;
+  border: 1px solid #e3e4ed;
+  border-radius: 8px;
+  padding: 10px;
+  color: #555a70;
+}
+
+.task-list {
+  display: grid;
+  gap: 12px;
+}
+
+.task-card {
+  background: white;
+  border: 1px solid #ebecf3;
+  border-radius: 12px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.check-button {
+  width: 23px;
+  height: 23px;
+  flex-shrink: 0;
+  border: 1.5px solid #d5d7e4;
+  border-radius: 7px;
+  background: white;
+  color: white;
+  cursor: pointer;
+}
+
+.check-button.checked {
+  background: #6658e8;
+  border-color: #6658e8;
+}
+
+.task-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.task-info h3 {
+  font-size: 14px;
+  margin: 0 0 7px;
+  overflow-wrap: anywhere;
+}
+
+.task-info p {
+  font-size: 12px;
+  color: #8b8fa2;
+  margin: 0;
+}
+
+.is-completed .task-info h3 {
+  color: #9699aa;
+  text-decoration: line-through;
+}
+
+.priority {
+  font-size: 11px;
+  padding: 6px 9px;
+  border-radius: 7px;
+}
+
+.priority-high {
+  background: #fff0ee;
+  color: #d95d4e;
+}
+
+.priority-medium {
+  background: #fff6df;
+  color: #b58220;
+}
+
+.priority-low {
+  background: #e9f8ef;
+  color: #329563;
+}
+
+.delete-button {
+  border: 0;
+  background: transparent;
+  color: #a0a3b4;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  color: #d95d4e;
+}
+
+.task-form {
+  padding: 24px;
+  border: 1px solid #e6e4fa;
+  background: white;
+  border-radius: 13px;
+  margin: 10px 0 25px;
+}
+
+.task-form h2 {
+  margin-bottom: 20px;
+}
+
+.task-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #555a70;
+  font-size: 12px;
+  font-weight: 600;
+  flex: 1;
+}
+
+.task-form input, .task-form select {
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px;
+  border: 1px solid #e1e2eb;
+  border-radius: 8px;
+  background: white;
+  color: #20243a;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-top: 17px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.empty-state {
+  padding: 35px;
+  text-align: center;
+  color: #85899d;
+  background: white;
+  border-radius: 12px;
+}
+
+footer {
+  text-align: center;
+  color: #a0a3b4;
+  font-size: 12px;
+  padding: 35px 0;
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    width: 175px;
+  }
+
+  .main-content {
+    padding: 0 22px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+
+  .main-content {
+    padding: 0 16px;
+  }
+
+  .welcome {
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 28px;
+  }
+
+  .stats-grid {
+    gap: 10px;
+  }
+
+  .stat-card {
+    padding: 15px;
+  }
+
+  .task-card {
+    padding: 13px;
+    gap: 9px;
+  }
+
+  .priority {
+    padding: 5px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .today-label {
+    display: none;
+  }
+}
