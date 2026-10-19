@@ -115,11 +115,11 @@ Install the following tools:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yashashwini2005-ai/taskflow-smart-task-manager.git
-cd taskflow-smart-task-manager
+git clone https://github.com/yashashwini2005-ai/Taskflow-smart-task-manager.git
+cd Taskflow-smart-task-manager
 ```
 
-Replace `YOUR-USERNAME` with your GitHub username.
+
 
 ### 2. Set up the Django backend
 
